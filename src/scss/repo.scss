@@ -1,0 +1,15 @@
+.repo {
+  display: flex;
+  width: 100%;
+  background-color: #E27BEB;
+  border: 1px solid #000000;
+
+  &__field {
+    margin: 0;
+    text-align: left;
+  }
+  &__deleter {
+    margin: auto;
+    margin-right: 16px;
+  }
+}

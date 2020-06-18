@@ -1,0 +1,9 @@
+.input-results {
+  display: flex;
+  flex-direction: column;
+
+  &__input-result {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

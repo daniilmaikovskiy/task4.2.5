@@ -1,0 +1,16 @@
+.input-result {
+  width: 305px;
+  height: 34px;
+  background: #E3E3E3;
+  border: 1px solid #000000;
+  font-size: 24px;
+  padding-left: 10px;
+
+  &:hover, &:focus {
+    background: #65CDF9;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
