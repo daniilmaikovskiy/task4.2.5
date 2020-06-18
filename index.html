@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task4.2.5</title>
+<link href="style.css" rel="stylesheet"></head>
+<body>
+  <div class="main-wrapper">
+    <div class="input-field main-wrapper__input-field">
+      <input type="text" value="" class="input-field__input" id="input">
+    </div>
+    <div class="input-results">
+      <button class="input-result input-results__input-result"></button>
+      <button class="input-result input-results__input-result"></button>
+      <button class="input-result input-results__input-result"></button>
+      <button class="input-result input-results__input-result"></button>
+      <button class="input-result input-results__input-result"></button>
+    </div>
+    <div class="repo-wrapper main-wrapper__repo-wrapper" id="repo-wrapper">
+      <template id="repo-template">
+        <div class="repo">
+          <div class="repo__fields-wrapper">
+            <p class="repo__field">
+              <span class="repo__field-name">Name: </span>
+              <span class="repo__field-value"></span>
+            </p>
+            <p class="repo__field">
+              <span class="repo__field-name">Owner: </span>
+              <span class="repo__field-value"></span>
+            </p>
+            <p class="repo__field">
+              <span class="repo__field-name">Stars: </span>
+              <span class="repo__field-value"></span>
+            </p>
+          </div>
+          <button class="deleter repo__deleter">
+            <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31 30.5L2 0" stroke="#FF0000" stroke-width="2"/>
+              <path d="M0 30.5L28 0" stroke="#FF0000" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+      </template>
+    </div>
+  </div>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
