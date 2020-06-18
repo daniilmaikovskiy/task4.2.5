@@ -19,7 +19,7 @@ const getJsonItems = debounce(url => {
     .catch(() => inputResults.clear());
 }, 200);
 
-const QUERY_URL = 'https://api.github.com/search/repositories?q=name:';
+const QUERY_URL = 'https://api.github.com/search/repositories?q=';
 
 const inputResults = new InputResults();
 inputResults.init();
