@@ -1,4 +1,4 @@
-import { REPO, REPO_WRAPPER, INPUT_RESULTS_HTML_ARRAY } from './settings.js';
+import { REPO, REPO_WRAPPER, INPUT_RESULTS_HTML_ARRAY } from '../settings.js';
 import { isNew, addInHtml, showHideHtml } from './inputResultsAddMethodHelper.js';
 
 export const add = obj => {

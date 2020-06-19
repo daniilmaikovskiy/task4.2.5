@@ -1,4 +1,4 @@
-import { INPUT_NODE } from './settings.js'
+import { INPUT_NODE } from '../../settings.js'
 import { getJsonItems } from './helper.js';
 
 export const addInputListenerMethod = inputResults => {
