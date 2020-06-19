@@ -5,7 +5,7 @@ import { addRepo } from './helper.js';
 export const addEventListenersMethod = obj => {
   INPUT_RESULTS_HTML_ARRAY.map((el, i) => {
       el.addEventListener('click', () => {
-        obj.repoData.push(obj.htmlArrayData[i].name);
+        obj.repoData.push(obj.htmlArrayData[i].id);
         addRepo(obj, i);
         addMethod(obj);
       });

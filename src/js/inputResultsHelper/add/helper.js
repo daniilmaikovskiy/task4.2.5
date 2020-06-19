@@ -1,6 +1,6 @@
 import { INPUT_RESULTS_HTML_ARRAY } from '../../settings.js';
 
-export const isNew = (el, arr) => !arr.some(e => e.toLowerCase() === el);
+export const isNew = (el, arr) => !arr.some(e => e === el);
 
 export const addInHtml = obj =>
   obj.htmlArrayData.map((el, i) => INPUT_RESULTS_HTML_ARRAY[i].textContent = el.name);

@@ -4,11 +4,13 @@ import { addMethod } from '../add/this.js';
 const addRepoValues = (obj, el, index) => {
   let fields = Array.from(el.querySelectorAll('.repo__field-value'));
   let data   = obj.htmlArrayData[index];
-  let keys   = Object.keys(data);
 
-  fields.map((field, i) => {
-    field.textContent = data[keys[i]];
-  });
+  let keys   = Object.keys(data).reduce((acc, key) => {
+    if (key !== 'id') acc.push(key);
+    return acc;
+  }, []);
+
+  fields.map((field, i) => field.textContent = data[keys[i]]);
 }
 
 const addRepoDeleter = (obj, el, name) => {
