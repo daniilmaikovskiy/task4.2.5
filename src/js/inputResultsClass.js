@@ -1,4 +1,4 @@
-import { add, addEventListeners } from './inputResultsHelper/inputResultsHelper.js';
+import { add, addEventListeners } from './inputResultsHelper/this.js';
 
 export class InputResults {
   constructor() {

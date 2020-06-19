@@ -1,4 +1,4 @@
-import { INPUT_RESULTS_HTML_ARRAY } from '../settings.js';
+import { INPUT_RESULTS_HTML_ARRAY } from '../../settings.js';
 
 export const isNew = (el, arr) => !arr.some(e => e.toLowerCase() === el);
 
