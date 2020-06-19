@@ -7,7 +7,7 @@ export const addInputListenerMethod = inputResults => {
     let inputValue = INPUT_NODE.value.trim();
 
     if (inputValue.length)
-      getJsonItems(inputResults, inputValue.split(' ').join('+'));
+      getJsonItems(inputResults, encodeURIComponent(inputValue));
     else
       inputResults.clear();
   });
