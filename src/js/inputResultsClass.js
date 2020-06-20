@@ -1,4 +1,4 @@
-import { add, addEventListeners } from './inputResultsHelper/this.js';
+import { add, addEventListeners } from './inputResultsHelper.js';
 
 export default class InputResults {
   constructor() {
@@ -14,7 +14,6 @@ export default class InputResults {
     return this;
   }
   setData(items) {
-    this.data = [];
     this.data = items;
     add(this);
   }

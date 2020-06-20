@@ -9,7 +9,6 @@ const getJsonItems = debounce((inputResultsObj, query) => {
 }, QUERY_DELAY);
 
 export const addInputListener = inputResults => {
-
   INPUT_NODE.addEventListener('input', () => {
     let inputValue = INPUT_NODE.value.trim();
 
