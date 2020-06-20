@@ -1,6 +1,6 @@
-import { add, addEventListeners } from './inputResultsHelper/this.js';
+import { add, addEventListeners } from './inputResultsHelper.js';
 
-export class InputResults {
+export default class InputResults {
   constructor() {
     this.data          = [];
     this.repoData      = [];
@@ -14,7 +14,6 @@ export class InputResults {
     return this;
   }
   setData(items) {
-    this.data = [];
     this.data = items;
     add(this);
   }
